@@ -1110,12 +1110,7 @@ post_end:
 
 
 
-do_planet_report (nampla, s_base, species)
-
-struct species_data	*species;
-struct nampla_data	*nampla;
-struct ship_data	*s_base;
-
+do_planet_report (struct nampla_data *nampla, struct ship_data *s_base, struct species_data *species)
 {
     int		i, j, ship_index, header_printed, ls_needed, production_penalty;
 
@@ -1438,12 +1433,7 @@ print_ship_header ()
 
 extern char	full_ship_id[64];
 
-print_ship (ship, species, species_number)
-
-struct species_data	*species;
-struct ship_data	*ship;
-int			species_number;
-
+print_ship (struct ship_data *ship, struct species_data *species, int species_number)
 {
     int		i, n, length, capacity, need_comma;
 
@@ -1510,11 +1500,7 @@ int			species_number;
 }
 
 
-print_mishap_chance (ship, destx, desty, destz)
-
-struct ship_data	*ship;
-int			destx, desty, destz;
-
+print_mishap_chance (struct ship_data *ship, int destx, int desty, int destz)
 {
     int		mishap_GV, mishap_age;
 
@@ -1553,10 +1539,7 @@ int			destx, desty, destz;
 }
 
 
-closest_unvisited_star (ship)
-
-struct ship_data	*ship;
-
+closest_unvisited_star (struct ship_data *ship)
 {
     int		i, found, species_array_index, species_bit_number;
 

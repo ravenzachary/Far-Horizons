@@ -69,12 +69,8 @@ main (int argc, char *argv[])
 /* The following routine will read species data from disk and return
    TRUE if it succeeds. If the file does not exist, it will return FALSE. */
 
-int get_spec_data (spec_number, spec,
-			need_extra_namplas, need_extra_ships)
-
-int			spec_number, need_extra_namplas, need_extra_ships;
-struct species_data	*spec;
-
+int get_spec_data (int spec_number, struct species_data	*spec,
+			int need_extra_namplas, int need_extra_ships)
 {
     int		spec_fd, extra_namplas, extra_ships;
 

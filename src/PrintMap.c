@@ -112,8 +112,7 @@ typedef struct {
 } LIMINFO;
 
 void
-header(outfile)
-FILE   *outfile;
+header(FILE *outfile)
 {
    OUT("%!");
    OUT("% Postscript output from Star Mapping Program");
@@ -135,18 +134,14 @@ FILE   *outfile;
 }
 
 void
-trailer(outfile)
-FILE   *outfile;
+trailer(FILE *outfile)
 {
    OUT("showpage");
    OUT("% End of postscript output from Star Mapping Program");
 }
 
 void
-emitps(outfile, current, side)
-FILE       *outfile;
-STARINFO   *current;
-int        side;
+emitps(FILE *outfile, STARINFO *current, int side)
 {
    float   psx, psy, psr;
    float   perspy, perspz;
@@ -160,8 +155,7 @@ int        side;
 }
 
 void
-rotate(current)
-STARINFO   *current;
+rotate(STARINFO *current)
 {
    float   temp;
 
@@ -171,9 +165,7 @@ STARINFO   *current;
 }
 
 void
-dostar(current, outfile)
-STARINFO   *current;
-FILE       *outfile;
+dostar(STARINFO *current, FILE *outfile)
 {
    emitps(outfile, current, LEFT);
    rotate(current);
@@ -181,9 +173,7 @@ FILE       *outfile;
 }
 
 void
-encode(head, outfile)
-STARINFO  *head;
-FILE      *outfile;
+encode(STARINFO *head, FILE *outfile)
 {
    STARINFO   *current = head;
 
@@ -194,12 +184,7 @@ FILE      *outfile;
 }
 
 void
-emittext(outfile, text, size, psx, psy, lino)
-FILE   *outfile;
-char   *text;
-int    size;
-float  psx, psy;
-int    lino;
+emittext(FILE *outfile, char *text, int size, float psx, float psy, int lino)
 {
    char   *ptext = text;
 
@@ -235,10 +220,7 @@ int    lino;
 }
 
 void
-calcgrid(lim, flag, gridsize)
-LIMINFO    *lim;
-FLAGINFO   *flag;
-int        *gridsize;
+calcgrid(LIMINFO *lim, FLAGINFO *flag, int *gridsize)
 {
    float   mapsize;
    int     reduction;
@@ -375,8 +357,7 @@ int        *gridsize;
 }
 
 void
-drawkey(outfile)
-FILE    *outfile;
+drawkey(FILE *outfile)
 {
    static  char  spectype[] = "OBAFGKM";
    int     i, keyy;
@@ -398,11 +379,7 @@ FILE    *outfile;
 }
 
 void
-drawgrid3D(outfile, lim, flag, gridsize)
-FILE       *outfile;
-LIMINFO    *lim;
-FLAGINFO   *flag;
-int        *gridsize;
+drawgrid3D(FILE *outfile, LIMINFO *lim, FLAGINFO *flag, int *gridsize)
 {
    int     xbegin, ybegin;
    float   psxbegin, psybegin;
@@ -469,11 +446,7 @@ int        *gridsize;
 }
 
 void
-drawgrid(outfile, lim, flag, gridsize)
-FILE       *outfile;
-LIMINFO    *lim;
-FLAGINFO   *flag;
-int        *gridsize;
+drawgrid(FILE *outfile, LIMINFO *lim, FLAGINFO *flag, int *gridsize)
 {
    int     xbegin, ybegin;
    float   psxbegin, psybegin;
@@ -520,10 +493,7 @@ int        *gridsize;
 }
 
 void
-getcoords(current, flag, psx, psy, psz, psr)
-STARINFO   *current;
-FLAGINFO   *flag;
-float      *psx, *psy, *psz, *psr;
+getcoords(STARINFO *current, FLAGINFO *flag, float *psx, float *psy, float *psz, float *psr)
 {
    if (flag->x) {
       *psx = current->y;
@@ -552,9 +522,7 @@ float      *psx, *psy, *psz, *psr;
 }
 
 void
-datapage(head, outfile)
-FILE       *outfile;
-STARINFO   *head;
+datapage(STARINFO *head, FILE *outfile)
 {
    int     i, keyy;
    int     column;
@@ -585,11 +553,7 @@ STARINFO   *head;
 }
 
 void
-drawstars3D(head, outfile, lim, flag)
-STARINFO   *head;
-FILE       *outfile;
-LIMINFO    *lim;
-FLAGINFO   *flag;
+drawstars3D(STARINFO *head, FILE *outfile, LIMINFO *lim, FLAGINFO *flag)
 {
    float   psx, psy, psz, psr;
    float   xoff, yoff, zoff, poff;
@@ -629,11 +593,7 @@ FLAGINFO   *flag;
 }
 
 void
-drawstars(head, outfile, lim, flag)
-STARINFO   *head;
-FILE       *outfile;
-LIMINFO    *lim;
-FLAGINFO   *flag;
+drawstars(STARINFO *head, FILE *outfile, LIMINFO *lim, FLAGINFO *flag)
 {
    float   psx, psy, psz, psr;
    char    zstr[10];
@@ -661,9 +621,7 @@ FLAGINFO   *flag;
 }
 
 void
-getlims(head, lim)
-STARINFO  *head;
-LIMINFO   *lim;
+getlims(STARINFO *head, LIMINFO *lim)
 {
    STARINFO   *current = head;
 
@@ -684,9 +642,7 @@ LIMINFO   *lim;
 }
 
 void
-normalise(head, lim)
-STARINFO   *head;
-LIMINFO    *lim;
+normalise(STARINFO *head, LIMINFO *lim)
 {
    float   xcent, ycent, zcent;
    float   dist, maxdist;
@@ -716,9 +672,7 @@ LIMINFO    *lim;
 }
 
 void
-doorbits(head, outfile)
-STARINFO  *head;
-FILE      *outfile;
+doorbits(STARINFO *head, FILE *outfile)
 {
    STARINFO  *current = head;
    PLANINFO  *plan;
@@ -758,11 +712,7 @@ FILE      *outfile;
 }
 
 void
-doflat(head, outfile, lim, flag)
-STARINFO  *head;
-FILE      *outfile;
-LIMINFO   *lim;
-FLAGINFO  *flag;
+doflat(STARINFO *head, FILE *outfile, LIMINFO *lim, FLAGINFO *flag)
 {
    int    gridsize;
 
@@ -778,11 +728,7 @@ FLAGINFO  *flag;
 }
 
 void
-do3D(head, outfile, lim, flag)
-STARINFO  *head;
-FILE      *outfile;
-LIMINFO   *lim;
-FLAGINFO  *flag;
+do3D(STARINFO *head, FILE *outfile, LIMINFO *lim, FLAGINFO *flag)
 {
    int    gridsize;
 
@@ -798,10 +744,7 @@ FLAGINFO  *flag;
 }
 
 void
-dopersp(head, outfile, lim)
-STARINFO  *head;
-FILE      *outfile;
-LIMINFO   *lim;
+dopersp(STARINFO *head, FILE *outfile, LIMINFO *lim)
 {
    header(outfile);
    OUT("0 100 moveto");
@@ -816,12 +759,7 @@ LIMINFO   *lim;
 }
 
 void
-getargs(argc, argv, filename, lim, flag)
-int        argc;
-char       *argv[];
-char       *filename;
-LIMINFO    *lim;
-FLAGINFO   *flag;
+getargs(int argc, char *argv[], char *filename, LIMINFO *lim, FLAGINFO *flag)
 {
    char    c;
    char    *progname = argv[0];
@@ -965,9 +903,7 @@ FLAGINFO   *flag;
 }
 
 void
-getdata(head, infile)
-STARINFO  **head;
-FILE      *infile;
+getdata(STARINFO **head, FILE *infile)
 {
    int       linenum;
    char      line[LINELEN];

@@ -79,12 +79,7 @@ int	start_temp_class[10] = {0, 29, 27, 11, 9, 8,   6,   5,  5,  3};
 	   a captured planet, rather than an original member of our solar
 	   system. */
 
-generate_planets (first_planet, num_planets, earth_like)
-
-struct planet_data	*first_planet;
-
-int	num_planets, earth_like;
-
+generate_planets (struct planet_data *first_planet, int num_planets, int earth_like)
 {
     int		i, j, n, planet_number, dia, diameter[10], gas_giant, die_size,
 		density, grav, g[10], tc, temperature_class[10], pc, temp,
@@ -424,10 +419,7 @@ get_gases:
 
 
 
-int LSN (current_planet, home_planet)
-
-struct planet_data	*current_planet, *home_planet;
-
+int LSN (struct planet_data *current_planet, struct planet_data *home_planet)
 {
     /* This routine provides an approximate LSN for a planet. It assumes
 	that oxygen is required and any gas that does not appear on the

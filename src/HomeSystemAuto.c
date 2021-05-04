@@ -159,7 +159,6 @@ main (int argc, char *argv[])
 
 
 get_random_xyz ()
-
 {
     int		i, found;
 

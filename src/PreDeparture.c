@@ -260,7 +260,6 @@ done_orders:
 
 
 do_predeparture_orders ()
-
 {
     int		i, command, old_test_mode;
 

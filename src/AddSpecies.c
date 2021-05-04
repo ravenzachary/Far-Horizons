@@ -423,10 +423,7 @@ get_xyz:
     exit (0);
 }
 
-get_name (name)
-
-char	name[];
-
+get_name (char name[])
 {
     int		i;
     char	temp[1024];

@@ -209,10 +209,7 @@ done:
 }
 
 
-print_LSN (planet, home_planet)
-
-struct planet_data	*planet, *home_planet;
-
+print_LSN (struct planet_data *planet, struct planet_data *home_planet)
 {
     /* This routine provides an approximate LSN for a planet. It assumes
 	that oxygen is required and any gas that does not appear on the

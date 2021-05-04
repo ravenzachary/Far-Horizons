@@ -289,7 +289,6 @@ done_orders:
 
 
 do_production_orders ()
-
 {
     int		i, command;
 

@@ -324,7 +324,6 @@ no_jump_orders:
 
 
 do_jump_orders ()
-
 {
     int		i, command;
 

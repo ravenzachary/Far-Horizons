@@ -272,7 +272,6 @@ done_orders:
 
 
 do_postarrival_orders ()
-
 {
     int		i, command;
 

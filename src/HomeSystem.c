@@ -212,7 +212,6 @@ convert:
 
 
 get_random_xyz ()
-
 {
     int		i, found;
 
