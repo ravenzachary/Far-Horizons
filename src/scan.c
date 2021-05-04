@@ -12,10 +12,7 @@ extern struct species_data	*species;
 extern struct nampla_data	*nampla_base;
 
 
-scan (x, y, z)
-
-char	x, y, z;
-
+scan (char x, char y, char z)
 {
     int		i, j, k, n, found, num_gases, ls_needed;
 

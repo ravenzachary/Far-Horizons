@@ -19,13 +19,8 @@ extern struct species_data	*c_species[MAX_SPECIES];
 /* The following routine will return TRUE if a round of combat actually
    occurred. Otherwise, it will return false. */
 
-int do_round (option, round_number, bat, act)
-
-char			option;
-int			round_number;
-struct battle_data	*bat;
-struct action_data	*act;
-
+int
+do_round (char option, int round_number, struct battle_data *bat, struct action_data *act)
 {
     int		i, j, n, unit_index, combat_occurred, total_shots,
 		attacker_index, defender_index, found, chance_to_hit,

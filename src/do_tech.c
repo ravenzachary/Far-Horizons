@@ -12,7 +12,6 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 do_TECH_command ()
-
 {
     int		i, tech, contact_word_number, contact_bit_number,
 		max_level_specified, max_tech_level, max_cost_specified,

@@ -10,10 +10,8 @@ extern struct species_data	*species;
 extern struct nampla_data	*nampla;
 
 
-int check_bounced (amount_needed)
-
-long	amount_needed;
-
+int
+check_bounced (long amount_needed)
 {
     long	take_from_EUs, limiting_balance;
 

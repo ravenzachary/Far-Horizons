@@ -8,7 +8,6 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 save_transaction_data ()
-
 {
     int		i, trans_fd;
     long	num_bytes;

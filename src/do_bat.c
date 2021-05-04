@@ -24,10 +24,7 @@ extern struct ship_data		*ship_base, *c_ship[MAX_SPECIES];
 
 
 
-do_battle (bat)
-
-struct battle_data	*bat;
-
+do_battle (struct battle_data *bat)
 {
     int		i, j, k, species_index, species_number, num_sp, save,
 		max_rounds, round_number, battle_here, fight_here,
@@ -689,11 +686,7 @@ do_combat:
 
 
 
-do_ambush (ambushing_species_index, bat)
-
-int			ambushing_species_index;
-struct battle_data	*bat;
-
+do_ambush (int ambushing_species_index, struct battle_data *bat)
 {
     int		i, j, n, num_sp, ambushed_species_index, num_ships,
 		age_increment, species_number, old_truncate_name;
@@ -842,10 +835,7 @@ struct battle_data	*bat;
    both a traitor and betrayed species. It will then set a flag to indicate
    that their allegiance should be changed from ALLY to ENEMY. */
 
-auto_enemy (traitor_species_number, betrayed_species_number)
-
-int	traitor_species_number, betrayed_species_number;
-
+auto_enemy (int traitor_species_number, int betrayed_species_number)
 {
     int		traitor_array_index, betrayed_array_index, bit_number,
 		species_index;

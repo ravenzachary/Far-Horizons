@@ -488,10 +488,7 @@ do_DEVELOP_command ()
 }
 
 
-start_dev_log (num_CUs, num_IUs, num_AUs)
-
-int	num_CUs, num_IUs, num_AUs;
-
+start_dev_log (int num_CUs, int num_IUs, int num_AUs)
 {
     log_string ("    ");
     log_int (num_CUs);  log_string (" Colonist Unit");

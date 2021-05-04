@@ -12,7 +12,6 @@ struct planet_data	*planet_base;
 
 
 get_planet_data ()
-
 {
     int		planet_fd;
 

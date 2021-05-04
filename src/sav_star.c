@@ -8,7 +8,6 @@ extern struct star_data		*star_base;
 
 
 save_star_data ()
-
 {
     int		star_fd;
 

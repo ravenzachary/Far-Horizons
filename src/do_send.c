@@ -13,7 +13,6 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 do_SEND_command ()
-
 {
     int		i, n, found, contact_word_number, contact_bit_number;
 

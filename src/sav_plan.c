@@ -8,7 +8,6 @@ extern struct planet_data	*planet_base;
 
 
 save_planet_data ()
-
 {
     int		planet_fd;
 

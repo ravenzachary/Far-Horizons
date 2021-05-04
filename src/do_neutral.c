@@ -9,7 +9,6 @@ extern struct species_data	*species;
 
 
 do_NEUTRAL_command ()
-
 {
     int		i, array_index, bit_number;
 

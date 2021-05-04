@@ -11,7 +11,6 @@ extern struct ship_data		*ship_base;
 
 
 do_ESTIMATE_command ()
-
 {
     int		i, max_error, estimate[6], contact_word_number,
 		contact_bit_number;

@@ -25,11 +25,7 @@ extern struct planet_data	*planet_base;
 
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     num_arguments = argc;
     argument = argv;
@@ -51,7 +47,6 @@ char *argv[];
 }
 
 set_species()
-
 {
     long	n;
 
@@ -149,7 +144,6 @@ next_item:
 
 
 set_nampla ()
-
 {
     int		i, found;
 
@@ -334,7 +328,6 @@ again:
 
 
 set_ship ()
-
 {
     int		i, found;
 
@@ -543,7 +536,6 @@ again:
 
 
 set_star()
-
 {
     int		i, x, y, z, found;
 
@@ -609,7 +601,6 @@ next_item:
 
 
 set_planet()
-
 {
     int		i, x, y, z, pn, found;
 
@@ -764,7 +755,6 @@ next_item:
 
 
 get_species ()
-
 {
     int		species_fd;
 
@@ -838,7 +828,6 @@ get_species ()
 
 
 save_species ()
-
 {
     int		species_fd;
 
@@ -900,10 +889,8 @@ save_species ()
    and "sub_light" will be TRUE or FALSE. (Tonnage value returned is based
    ONLY on abbreviation.) */
 
-int get_class_abbr (arg)
-
-char	*arg;
-
+int
+get_class_abbr (char *arg)
 {
     int		i;
 
@@ -1017,10 +1004,8 @@ int	ignore_field_distorters = FALSE;
 
 char	full_ship_id[64];
 
-char *ship_name (ship)
-
-struct ship_data	*ship;
-
+char *
+ship_name (struct ship_data *ship)
 {
     int		effective_age, status, ship_is_distorted;
 

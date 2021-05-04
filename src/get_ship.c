@@ -17,8 +17,8 @@ extern struct species_data	*species;
 extern struct ship_data		*ship_base, *ship;
 
 
-int get_ship ()
-
+int
+get_ship ()
 {
     int		i, n, name_length, best_score, next_best_score, best_ship_index,
 		first_try, minimum_score;

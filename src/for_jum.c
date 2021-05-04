@@ -14,14 +14,9 @@ extern struct galaxy_data	galaxy;
    even if they fail. It will return FALSE if the attacker has none or
    not enough. */
 
-int forced_jump_units_used (attacker_index, defender_index, total_shots,
-					bat, act)
-
-int	attacker_index, defender_index, *total_shots;
-
-struct battle_data	*bat;
-struct action_data	*act;
-
+int
+forced_jump_units_used (int attacker_index, int defender_index, int *total_shots,
+					struct battle_data *bat, struct action_data *act)
 {
     int		i, att_sp_index, def_sp_index, attacker_gv, defender_gv,
 		type, fj_num, fm_num, number, success_chance, failure;

@@ -7,7 +7,8 @@ extern char			*input_line_pointer;
 extern struct nampla_data	*nampla;
 
 
-int get_transfer_point ()
+int
+get_transfer_point ()
 {
     char	*temp_ptr;
 

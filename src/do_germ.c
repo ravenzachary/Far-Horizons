@@ -13,12 +13,7 @@ extern struct ship_data		*c_ship[MAX_SPECIES];
 extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
-do_germ_warfare (attacking_species, defending_species, defender_index, bat, act)
-
-int			attacking_species, defending_species, defender_index;
-struct battle_data	*bat;
-struct action_data	*act;
-
+do_germ_warfare (int attacking_species, int defending_species, int defender_index, struct battle_data *bat, struct action_data *act)
 {
     int		i, attacker_BI, defender_BI, success_chance, num_bombs,
 		success;

@@ -13,11 +13,7 @@ int	num_transactions = 0;
 extern int	first_pass;
 
 
-add_transaction (transaction)
-
-struct trans_data	*transaction;
-
-
+add_transaction (struct trans_data	*transaction)
 {
     long	num_bytes;
 

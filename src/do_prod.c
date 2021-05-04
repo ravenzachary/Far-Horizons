@@ -20,10 +20,7 @@ extern struct ship_data		*ship_base;
 extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
-do_PRODUCTION_command (missing_production_order)
-
-int	missing_production_order;
-
+do_PRODUCTION_command (int missing_production_order)
 {
     int		i, j, abbr_type, name_length, found, alien_number, under_siege,
 		siege_percent_effectiveness, new_alien, num_siege_ships,

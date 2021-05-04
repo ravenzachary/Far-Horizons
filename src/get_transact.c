@@ -8,8 +8,6 @@ struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 get_transaction_data ()
-
-
 {
     int		i, trans_fd;
     long	num_bytes;

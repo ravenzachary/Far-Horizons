@@ -30,10 +30,7 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 
-do_JUMP_command (jumped_in_combat, using_jump_portal)
-
-int	jumped_in_combat, using_jump_portal;
-
+do_JUMP_command (int jumped_in_combat, int using_jump_portal)
 {
     int		i, n, found, max_xyz, temp_x, temp_y, temp_z, difference,
 		status, mishap_gv;
@@ -379,8 +376,8 @@ self_destruct:
 
 
 
-int get_jump_portal ()
-
+int
+get_jump_portal ()
 {
     int		i, j, k, found, array_index, bit_number;
 

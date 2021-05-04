@@ -17,7 +17,8 @@ extern struct nampla_data	*nampla_base, *nampla;
 extern struct star_data		*star_base, *star;
 
 
-int get_location ()
+int
+get_location ()
 {
     int		i, n, found, temp_nampla_index, first_try, name_length,
 		best_score, next_best_score, best_nampla_index,

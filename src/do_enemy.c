@@ -9,7 +9,6 @@ extern struct species_data	*species;
 
 
 do_ENEMY_command ()
-
 {
     int		i, array_index, bit_number;
 

@@ -17,7 +17,8 @@ extern char			upper_name[32], *input_line_pointer;
 extern struct galaxy_data	galaxy;
 
 
-int get_species_name ()
+int
+get_species_name ()
 {
     int		i, n, species_index, best_score, best_species_index,
 		next_best_score, first_try, minimum_score, name_length;

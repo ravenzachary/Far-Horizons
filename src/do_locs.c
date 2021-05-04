@@ -56,10 +56,7 @@ do_locations ()
 
 
 
-add_location (x, y, z)
-
-char	x, y, z;
-
+add_location (char x, char y, char z)
 {
     int		i;
 

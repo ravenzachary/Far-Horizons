@@ -12,11 +12,7 @@ extern struct nampla_data	*c_nampla[MAX_SPECIES];
 extern struct ship_data		*c_ship[MAX_SPECIES];
 
 
-do_bombardment (unit_index, act)
-
-int			unit_index;
-struct action_data	*act;
-
+do_bombardment (int unit_index, struct action_data *act)
 {
     int			i, new_mi, new_ma, defending_species;
 

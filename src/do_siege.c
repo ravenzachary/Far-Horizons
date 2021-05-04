@@ -11,11 +11,7 @@ extern struct species_data	*c_species[MAX_SPECIES];
 extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
-do_siege (bat, act)
-
-struct battle_data	*bat;
-struct action_data	*act;
-
+do_siege (struct battle_data *bat, struct action_data *act)
 {
     int		a, d, i, attacker_index, defender_index,
 		attacking_species_number, defending_species_number;

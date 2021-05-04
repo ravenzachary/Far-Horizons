@@ -12,7 +12,6 @@ extern struct ship_data		*ship;
 
 
 do_WORMHOLE_command ()
-
 {
     int		i, found, status;
 

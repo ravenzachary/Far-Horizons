@@ -6,7 +6,6 @@ extern struct galaxy_data	galaxy;
 
 
 get_galaxy_data ()
-
 {
     int		galaxy_fd;
 

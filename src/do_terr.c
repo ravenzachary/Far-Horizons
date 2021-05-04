@@ -174,10 +174,7 @@ next_change:
 }
 
 
-fix_gases (pl)
-
-struct planet_data	*pl;
-
+fix_gases (struct planet_data *pl)
 {
     int		i, j, total, left, add_neutral;
 

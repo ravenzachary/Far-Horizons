@@ -16,7 +16,6 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 do_TRANSFER_command ()
-
 {
     int		i, n, item_class, item_count, capacity, transfer_type,
 		attempt_during_siege, siege_1_chance, siege_2_chance,

@@ -3,7 +3,6 @@
 
 
 gamemaster_abort_option ()
-
 {
 	char	answer[16];
 

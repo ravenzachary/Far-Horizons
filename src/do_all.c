@@ -13,7 +13,6 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 do_ALLIES_command ()
-
 {
     int		i, n, contact_word_number, contact_bit_number;
 

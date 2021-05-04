@@ -12,7 +12,6 @@ struct star_data	*star_base;
 
 
 get_star_data ()
-
 {
     int		star_fd;
 

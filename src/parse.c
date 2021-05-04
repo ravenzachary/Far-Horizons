@@ -96,7 +96,8 @@ skip_whitespace ()
 
 
 /* Get a command and return its index. */
-int get_command ()
+int
+get_command ()
 {
     int		i, cmd_n;
     char	c, cmd_s[4];
@@ -160,7 +161,8 @@ int get_command ()
    and "sub_light" will be TRUE or FALSE. (Tonnage value returned is based
    ONLY on abbreviation.) */
 
-int get_class_abbr ()
+int
+get_class_abbr ()
 {
     int		i;
 
@@ -266,7 +268,8 @@ int get_class_abbr ()
 
 /* Get a name and copy original version to "original_name" and upper
    case version to "upper_name". Return length of name. */
-int get_name ()
+int
+get_name ()
 {
     int		name_length;
 
@@ -309,7 +312,8 @@ int get_name ()
 
 
 /* Read a long decimal and place its value in 'value'. */
-int get_value ()
+int
+get_value ()
 {
     int		n;
 
@@ -334,7 +338,6 @@ int get_value ()
    be called only AFTER an error has been detected. */
 
 fix_separator ()
-
 {
     int		n, first_class, fix_made, num_commas;
 

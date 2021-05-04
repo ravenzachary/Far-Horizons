@@ -108,10 +108,7 @@ do_INTERCEPT_command ()
 #define MAX_ENEMY_SHIPS	400
 
 
-handle_intercept (intercept_index)
-
-int	intercept_index;
-
+handle_intercept (int intercept_index)
 {
     int		i, j, n, num_enemy_ships, alien_index, enemy_index, enemy_num,
 		num_ships_left, array_index, bit_number, is_an_enemy,

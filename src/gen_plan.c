@@ -14,12 +14,7 @@ int	start_temp_class[10] = {0, 29, 27, 11, 9, 8,   6,   5,  5,  3};
 	   a captured planet, rather than an original member of our solar
 	   system. */
 
-generate_planets (first_planet, num_planets)
-
-struct planet_data	*first_planet;
-
-int	num_planets;
-
+generate_planets (struct planet_data *first_planet, int num_planets)
 {
     int		i, j, n, planet_number, dia, diameter[10], gas_giant, die_size,
 		density, grav, g[10], tc, temperature_class[10], pc, temp,

@@ -18,10 +18,7 @@ short	ship_power[101] =	{0,	/* Zeroth element not used. */
 	19507, 19796, 20086, 20377, 20668, 20960, 21253, 21547, 21841, 22136,
 	22431, 22727, 23024, 23321, 23619, 23918, 24217, 24517, 24818, 25119 };
 
-long power (tonnage)
-
-short	tonnage;
-
+long power (short tonnage)
 {
     long	result;
     short	t1, t2;
@@ -53,10 +50,7 @@ extern char	input_line[];
 
 extern FILE	*log_file;
 
-battle_error (species_number)
-
-int	species_number;
-
+battle_error (int species_number)
 {
     fprintf (log_file, "!!! Order ignored:\n");
     fprintf (log_file, "!!! %s", input_line);

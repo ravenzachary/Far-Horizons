@@ -12,7 +12,6 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 
 
 do_MESSAGE_command ()
-
 {
     int		i, message_number, message_fd, bad_species,
 		unterminated_message;

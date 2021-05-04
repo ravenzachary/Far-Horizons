@@ -1,11 +1,7 @@
 
 #include <stdio.h>
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, bit_number, word_number, species_number;
 
