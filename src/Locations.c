@@ -28,11 +28,7 @@ extern struct sp_loc_data	loc[MAX_LOCATIONS];
 extern struct planet_data	*planet_base;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, nampla_index;
 

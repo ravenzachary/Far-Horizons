@@ -6,11 +6,7 @@
 
 struct galaxy_data	galaxy;
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     /* Check for valid command line. */
     if (argc != 1)

@@ -50,11 +50,7 @@ int			num_stars, species_number, star_data_modified;
 struct star_data	*star_base;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, j, k, found, command, species_number, sp_index, num_battles,
 		location_index, species_fd, num_enemies, battle_index,

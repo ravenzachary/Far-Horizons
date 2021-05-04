@@ -19,11 +19,7 @@ extern struct star_data *star_base;
 #define MY_ENCODING "ISO-8859-1"
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int rc, galactic_diameter, star_index;
 

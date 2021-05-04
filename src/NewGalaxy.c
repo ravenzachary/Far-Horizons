@@ -14,11 +14,7 @@ struct galaxy_data	galaxy;
 extern unsigned long	last_random;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		d, i, n, galaxy_file, star_file, planet_file, using_defaults;
 

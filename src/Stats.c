@@ -20,11 +20,7 @@ struct ship_data	*ship_base, *ship;
 extern struct planet_data	*planet_base;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, j, m, n, nampla_index, ship_index, num_ships, avg_tech_level,
 		all_tech_level[6], n_species, n_warships, n_starbases,

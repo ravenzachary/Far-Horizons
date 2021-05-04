@@ -25,11 +25,7 @@ extern char	input_line[256], *input_line_pointer;
 extern FILE	*input_file, *log_file;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, n, found, num_species, sp_num[MAX_SPECIES], sp_index,
 		command, log_file_open, do_all_species;

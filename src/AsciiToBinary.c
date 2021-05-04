@@ -24,11 +24,7 @@ extern struct planet_data	*planet_base;
 
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, j, n, galaxy_fd;
 

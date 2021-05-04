@@ -30,11 +30,7 @@ extern unsigned long	last_random;
 extern FILE		*input_file, *log_file;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, n, found, num_species, sp_num[MAX_SPECIES], sp_index,
 		command, do_all_species;

@@ -32,11 +32,7 @@ extern struct trans_data	transaction[MAX_TRANSACTIONS];
 extern struct sp_loc_data	loc[MAX_LOCATIONS];
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, j, n, rec, don, nampla_index, ship_index, ls_needed,
 		ls_actual, tech, turn_number, percent_increase, old_tech_level,

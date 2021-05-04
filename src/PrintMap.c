@@ -1058,9 +1058,7 @@ FILE      *infile;
 }
    
 int
-main(argc, argv)
-int    argc;
-char   *argv[];
+main (int argc, char *argv[])
 {
    char      filename[NAMELEN];
    char      line[LINELEN];

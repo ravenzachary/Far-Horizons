@@ -20,11 +20,7 @@ extern struct star_data	*star_base;
 
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, n, x, y, z, line, x_count, n_columns, x_increment,
 		page_count, page, left_x, galactic_diameter, star_index;

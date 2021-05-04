@@ -23,11 +23,7 @@ extern struct planet_data	*planet_base;
 extern int	num_stars, num_planets;
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, n, x, y, z, galactic_diameter, star_index, special;
 

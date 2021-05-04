@@ -21,11 +21,7 @@ extern struct planet_data	*planet_base;
 
 
 
-main (argc, argv)
-
-int argc;
-char *argv[];
-
+main (int argc, char *argv[])
 {
     int		i, j, n, star_index, total_planets, list_planets, usage_error,
 		type_count[10], num_gases, home_system, total_wormstars,
